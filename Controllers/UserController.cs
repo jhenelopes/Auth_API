@@ -32,12 +32,6 @@ namespace auth_api.Controllers
             return Ok();
         }
 
-        [HttpGet("all")]
-        public IActionResult Get() 
-        {
-            var users = _userRepository.Get();
-            return Ok(users);
-        }
         [HttpGet("login")]
         public IActionResult Get(string usuario, string senha)
         {

@@ -9,9 +9,9 @@ namespace auth_api.Infrastructure
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql(
             "Server=localhost;" +   
-            "Port=5432;Database=teste;" +
+            "Port=5432;Database=letshare_assessment;" +
             "User Id=postgres;" +
-            "Password=123"
+            "Password=12345"
           );
     }
 }
