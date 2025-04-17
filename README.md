@@ -7,13 +7,12 @@ The goal is to ensure that existing users can continue to log in successfully th
 🎯 Objective
 
 Develop an authentication API in .NET 8 that:
-
-    Accepts username and password using the password grant type.
-    Queries the existing tbl_user table in a PostgreSQL database.
-    Verifies the password using BCrypt, as all passwords are already stored using this algorithm.
-    Issues two JWTs:
-    access_token (valid for 6 minutes).
-    refresh_token (valid for 1 hour).
+Accepts username and password using the password grant type.
+Queries the existing tbl_user table in a PostgreSQL database.
+Verifies the password using BCrypt, as all passwords are already stored using this algorithm.
+Issues two JWTs:
+access_token (valid for 6 minutes).
+refresh_token (valid for 1 hour).
 
 💻 Used Dependencies
 
@@ -27,3 +26,7 @@ Develop an authentication API in .NET 8 that:
 🧪 Postgres
 
     5432
+
+✨ Swagger
+
+Swagger was used for API documentation and testing 
